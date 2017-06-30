@@ -24,7 +24,7 @@ function getRandomColor(){
     $str="abcdef0123456789";
     $out='';
     while (strlen($out)<6){
-        $out.=mb_substr($str,rand(0,15),1);
+        $out.=substr($str,rand(0,15),1);
     }
     return "#$out";
 }
